@@ -1,0 +1,476 @@
+/* Global Styles */
+
+.container {
+  max-width: 500px;
+  width: 90%;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f7f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 500px; /* Adjusted for a narrower container */
+  width: 90%;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+.container input {
+  width: calc(100% - 24px); /* Adjust width for padding */
+  margin: 10px 0; /* Add spacing between inputs */
+  padding: 12px;
+}
+
+.container button {
+  width: calc(100% - 24px); /* Adjust width for padding */
+  margin: 10px 0; /* Add spacing above and below button */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.username,
+.pass,
+.but,
+.para {
+  margin-bottom: 20px; /* Add spacing between sections */
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #666;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.nav-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #0056b3;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.feature {
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #666;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+select,
+button {
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+}
+
+input:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.table-container {
+  margin-top: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px; /* Adds vertical spacing between rows */
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden; /* Ensures rounded corners work */
+}
+
+thead {
+  background-color: #007bff;
+  color: white;
+}
+
+th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 700;
+}
+
+td {
+  padding: 12px;
+  border-top: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feature {
+    flex: none;
+  }
+
+  .btn {
+    font-size: 0.9em;
+  }
+}
+
+/* Global Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f7f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container1 {
+  max-width: 1000px; /* Adjusted for a narrower container */
+  width: 90%;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+.container input {
+  width: calc(100% - 24px); /* Adjust width for padding */
+  margin: 10px 0; /* Add spacing between inputs */
+  padding: 12px;
+}
+
+.container button {
+  width: calc(100% - 24px); /* Adjust width for padding */
+  margin: 10px 0; /* Add spacing above and below button */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.username,
+.pass,
+.but,
+.para {
+  margin-bottom: 20px; /* Add spacing between sections */
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #666;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* Additional styles for buttons on the view-expenses page */
+.container1 .btn {
+  margin: 10px 0;
+}
+
+/* Global Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f7f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container1 {
+  max-width: 1000px; /* Adjusted for a wider container */
+  width: 90%;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+.container1 input,
+.container1 button {
+  width: 100%; /* Full width for mobile */
+  margin: 10px 0; /* Add spacing above and below inputs and buttons */
+  padding: 12px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #666;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.table-container {
+  margin-top: 30px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Ensure tables are properly formatted */
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden; /* Ensures rounded corners work */
+}
+
+thead {
+  background-color: #007bff;
+  color: white;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  font-weight: 700;
+}
+
+td {
+  border-top: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .container1 {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .btn {
+    font-size: 0.9em;
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+  }
+
+  /* Ensure the table container can scroll horizontally */
+  .table-container {
+    overflow-x: auto; /* Horizontal scrolling */
+  }
+}

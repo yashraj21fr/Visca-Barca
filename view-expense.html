@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Expenses - Expense Management System</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container1">
+      <h1>View Expenses</h1>
+      <input
+        type="text"
+        id="search"
+        oninput="searchExpenses()"
+        placeholder="Search expenses"
+      />
+      <table id="expense-table">
+        <thead>
+          <tr>
+            <th>Expense</th>
+            <th>Category</th>
+            <th>Amount (₹)</th>
+            <th>Date</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Expenses will be rendered here with data-label attributes -->
+          <tr>
+            <td data-label="Expense">Lunch</td>
+            <td data-label="Category">Food</td>
+            <td data-label="Amount (₹)">500</td>
+            <td data-label="Date">2024-09-15</td>
+            <td data-label="Time">12:30 PM</td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+      <!-- Add Expense Button -->
+      <div class="btn3">
+        <button onclick="location.href='add-expense.html'">Add Expense</button>
+      </div>
+      <button onclick="exportExpenses()" class="btn">Export as CSV</button>
+    </div>
+
+    <script src="scripts/view-expense.js"></script>
+
+    <footer>
+      <p>&copy; 2024 Expense Management System. All rights reserved.</p>
+      <a href="login.html" class="btn">Logout</a>
+    </footer>
+  </body>
+</html>
