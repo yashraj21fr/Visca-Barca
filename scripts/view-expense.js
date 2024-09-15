@@ -1,4 +1,6 @@
 window.onload = function () {
+  console.log("Page loaded");
+  
   const loggedInUser = localStorage.getItem("loggedInUser");
   if (!loggedInUser) {
     alert("Please log in to view your expenses.");
@@ -108,7 +110,7 @@ function formatDate(date) {
   const d = new Date(date);
   if (isNaN(d)) return ""; // Return an empty string if the date is invalid
   // Format date as YYYY-MM-DD for better compatibility with Excel
-  return `${d.getFullYear()}-${(d.getMonth() + 1)
-    .toString()
-    .padStart(2, "0")}-${d.getDate().toString().padStart(2, "0")}`;
+  return `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, "0")}-${d.getDate().toString().padStart(2, "0")}`;
 }
+
+  
