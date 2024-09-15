@@ -314,3 +314,39 @@ select:focus {
   outline: none;
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Add shadow on focus */
 }
+
+/* Ensure the table takes up the full width of the container */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+/* Ensure table headers and cells have some padding for readability */
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Apply a max width and make it scrollable for smaller screens */
+@media only screen and (max-width: 600px) {
+  table {
+    display: block; /* Enable block display */
+    overflow-x: auto; /* Add horizontal scroll for mobile devices */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+
+  th,
+  td {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  /* Adjust the buttons below the table to be responsive */
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 1em;
+  }
+}
