@@ -11,7 +11,6 @@
   box-sizing: border-box;
 }
 
-/* Global Styles */
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f4f7f9;
@@ -20,17 +19,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-.container {
-  max-width: 500px; /* Adjusted for a narrower container */
-  width: 90%;
-  padding: 30px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  box-sizing: border-box;
 }
 
 .container input {
@@ -95,14 +83,6 @@ header {
   margin-bottom: 30px;
 }
 
-h1 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-  font-size: 2.5em;
-  font-weight: 700;
-}
-
 .navbar {
   display: flex;
   justify-content: center;
@@ -163,32 +143,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-.btn {
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 1.1em;
-  font-weight: 600;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.btn:hover {
-  background-color: #0056b3;
-}
-
-.btn:active {
-  transform: scale(0.98);
-}
-
-footer {
-  text-align: center;
-  margin-top: 30px;
-  color: #666;
-}
-
 .form-container {
   max-width: 600px;
   margin: 0 auto;
@@ -240,6 +194,7 @@ button:active {
 
 .table-container {
   margin-top: 30px;
+  overflow-x: auto; /* Ensure horizontal scrolling on smaller devices */
 }
 
 table {
@@ -280,102 +235,19 @@ td {
   .btn {
     font-size: 0.9em;
   }
-}
 
-/* Global Styles */
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #f4f7f9;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.container1 {
-  max-width: 1000px; /* Adjusted for a narrower container */
-  width: 90%;
-  padding: 30px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  box-sizing: border-box;
-}
-
-.container input {
-  width: calc(100% - 24px); /* Adjust width for padding */
-  margin: 10px 0; /* Add spacing between inputs */
-  padding: 12px;
-}
-
-.container button {
-  width: calc(100% - 24px); /* Adjust width for padding */
-  margin: 10px 0; /* Add spacing above and below button */
-}
-
-h1 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-  font-size: 2.5em;
-  font-weight: 700;
-}
-
-.username,
-.pass,
-.but,
-.para {
-  margin-bottom: 20px; /* Add spacing between sections */
-}
-
-footer {
-  text-align: center;
-  margin-top: 30px;
-  color: #666;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 1.1em;
-  font-weight: 600;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.btn:hover {
-  background-color: #0056b3;
-}
-
-.btn:active {
-  transform: scale(0.98);
-}
-
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
+  .table-container {
+    overflow-x: auto; /* Ensures horizontal scrolling on mobile */
   }
-}
 
-/* Additional styles for buttons on the view-expenses page */
-.container1 .btn {
-  margin: 10px 0;
-}
+  table {
+    width: 100%; /* Ensure the table fits the container width */
+  }
 
-/* Global Styles */
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #f4f7f9;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  th,
+  td {
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
 }
 
 .container1 {
@@ -392,71 +264,8 @@ body {
 .container1 input,
 .container1 button {
   width: 100%; /* Full width for mobile */
-  margin: 10px 0; /* Add spacing above and below inputs and buttons */
+  margin: 10px 0;
   padding: 12px;
-}
-
-h1 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-  font-size: 2.5em;
-  font-weight: 700;
-}
-
-footer {
-  text-align: center;
-  margin-top: 30px;
-  color: #666;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 1.1em;
-  font-weight: 600;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.btn:hover {
-  background-color: #0056b3;
-}
-
-.btn:active {
-  transform: scale(0.98);
-}
-
-.table-container {
-  margin-top: 30px;
-  overflow-x: auto; /* Enable horizontal scrolling */
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse; /* Ensure tables are properly formatted */
-  background-color: #fff;
-  border-radius: 8px;
-  overflow: hidden; /* Ensures rounded corners work */
-}
-
-thead {
-  background-color: #007bff;
-  color: white;
-}
-
-th,
-td {
-  padding: 12px;
-  text-align: left;
-  font-weight: 700;
-}
-
-td {
-  border-top: 1px solid #ddd;
 }
 
 @media (max-width: 768px) {
@@ -469,8 +278,39 @@ td {
     padding: 10px 20px; /* Adjust padding for smaller screens */
   }
 
-  /* Ensure the table container can scroll horizontally */
   .table-container {
     overflow-x: auto; /* Horizontal scrolling */
   }
+
+  table {
+    width: 100%;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+}
+
+/* Apply a consistent style for all input boxes */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select {
+  width: 100%; /* Adjust width to fill the container */
+  padding: 12px; /* Consistent padding */
+  margin: 10px 0; /* Add spacing between inputs */
+  border: 1px solid #ced4da; /* Consistent border */
+  border-radius: 8px; /* Rounded corners */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #007bff; /* Focus color */
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Add shadow on focus */
 }
