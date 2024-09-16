@@ -344,9 +344,10 @@ td {
 
   /* Adjust the buttons below the table to be responsive */
   .btn {
-    width: 100%;
+    width: 90%;
     margin-top: 10px;
     padding: 12px;
     font-size: 1em;
+    text-align: center;
   }
 }
